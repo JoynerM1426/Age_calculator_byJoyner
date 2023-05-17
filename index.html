@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./style/style.css" rel="stylesheet" type="text/css">
+    
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <div class="containerForm">
+    <article class="alertContainer" id="alertMessage">
+      <h2 class="messageAlert">Warning! please full the form</h2>
+    </article>
+    <section class="borderForm">
+
+          <form id="ageCalculatorForm" class="formContainer">
+            <div class="dayDiv">
+              
+              <label class="label" for="day">Day</label>
+              <input type="number" id="day" placeholder="DD" min="1" max="31" step="1" value="--" class="input">
+              <h2 id="errorMessage">valor de dia 1-31</h2>
+              
+            
+            </div>
+            <div class="monthsDiv">
+      
+              <label class="label" for="month">Month</label>
+              <input type="number" id="month" placeholder="MM" min="1" max="12" step="1" value="--" class="input">
+              <h2 id="errorMessage2">valor de mes 1-12</h2>
+      
+            </div>
+            <div class="yearsDiv">
+      
+              <label class="label" for="year">Year</label>
+              <input type="number" id="year" placeholder="YYYY" min="1900" max="2023" step="1" value="--" class="input">
+              <h2 id="errorMessage3">formato del año 2023</h2>
+                
+            </div>
+          
+            <span class="line"></span>
+            <button type="submit" id="calculateButton" class="buttonSubmit"> <i class='bx bx-chevrons-down'></i></button>
+          </form>
+          <div class="results">
+            <article class="resultAge">
+              <input type="text" id="years" value="--" readonly class="inputResult">
+              <label class="labelResult" for="age">Years</label>
+            </article>
+            <article class="resultMonth">
+              <input type="text" id="months" value="--" readonly class="inputResult">
+              <label class="labelResult" for="months">Months</label>
+            </article>
+            <article class="resultYear">
+              <input type="text" id="days" value="--" readonly class="inputResult">
+              <label class="labelResult" for="days">Days</label>
+            </article>
+          </div>
+        </div>
+    </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://joynermirandaportfolio.netlify.app/" target="_blank">Joyner Miranda</a>.
+  </div>
+</body>
+  <script src="index.js"></script>
+</html>

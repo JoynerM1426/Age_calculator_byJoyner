@@ -1,0 +1,153 @@
+body{
+  background-color: rgb(231, 170, 155);
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+form > div{
+  margin-left: 30px;
+}
+form > button{
+  margin-left: 40px;
+}
+h2{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.containerForm{
+  max-width: 1440px;
+  min-width: 375px;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer{
+  position: relative;
+  display: flex;
+  justify-content: start;
+  height: 130px;
+  width: 90%;
+}
+.borderForm{
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  height: 75vh;
+  width: 50%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-right-radius: 110px;
+}
+.line{
+  height: 1px;
+  width: 90%;
+  background-color: gray;
+  
+}
+.formContainer span{
+  bottom: 35px;
+  position: absolute;
+  z-index: 0;
+}
+.buttonSubmit{
+  position: absolute;
+  border: 1px solid transparent;
+  bottom: 5px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color:hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+.bx-chevrons-down{
+  font-size: 50px;
+  color: antiquewhite;
+}
+
+.dayDiv, .monthsDiv, .yearsDiv{
+  display: flex;
+  flex-direction: column;
+}
+#errorMessage {
+  display: none;
+}
+#errorMessage2{
+  display: none;
+}
+#errorMessage3{
+  display: none;
+}
+.alertContainer{
+  display:none;
+}
+/* Input */
+.input{
+  border: 1px solid lightgray;
+  height: 30px;
+  width: 60px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+.input::placeholder{
+  color: rgb(112, 109, 109);
+  font-size: 16px;
+  font-weight: 600;
+}
+.input:not(:placeholder-shown){
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* label */
+.label{
+  font-size: 12px;
+  color: rgb(63, 63, 63);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+/* results */
+.results{
+  padding: 40px;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.resultAge, .resultMonth, .resultYear{
+  display: flex;
+  margin-bottom: 10px;
+}
+.results input{
+  width: 90px;
+  height: 50px;
+}
+.labelResult{
+  font-size: 50px;
+  font-weight: 600;
+}
+.inputResult{
+  border: transparent;
+}
+.inputResult:not(:placeholder-shown){
+  color: purple;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+/* article */
+a{
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400px;
+  color: gray !important;
+}
