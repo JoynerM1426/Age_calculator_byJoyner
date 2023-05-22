@@ -299,3 +299,9 @@ a{
     height: 80vh;
   }
 }
+@media screen and (max-width: 375px){
+  .borderForm{
+    width: 375px;
+    height: 100vh;
+  }
+}
