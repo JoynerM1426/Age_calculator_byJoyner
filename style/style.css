@@ -290,6 +290,9 @@ a{
   .dayDiv, .monthsDiv ,.yearsDiv{
     margin-top: 40px;
   }
+  .containerForm{
+    padding: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .formContainer span{
@@ -306,6 +309,9 @@ a{
     width: 375px;
     padding: 0;
     margin: 0;
+}
+.containerForm{
+  padding: 0;
 }
 }
 @media screen and (max-width: 375px){
