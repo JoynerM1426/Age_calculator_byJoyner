@@ -1,5 +1,8 @@
 body{
   background-color: rgb(231, 170, 155);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 form{
@@ -296,7 +299,10 @@ a{
     margin-left: 20px;
   }
   .borderForm{
-    height: 80vh;
+    height: 90%;
+    width: 95%;
+    padding: 0;
+    margin: 0;
   }
 }
 @media screen and (max-width: 375px){
@@ -305,12 +311,19 @@ a{
     height: 100vh;
     padding: 0;
     margin: 0;
+    top: 0;
+    border-radius: 0;
+    bottom: 0;
   }
   .results{
     padding: 30px;
   }
   body{
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+  }
+  .containerForm{
     padding: 0;
   }
 }
